@@ -2,6 +2,9 @@ import Link from 'next/link';
 
 const linkStyle = {
   marginRight: 15,
+  fontFamily: "'Rubik',sans-serif",
+  textDecoration: "none",
+  cursor: "pointer"
 };
 
 const linkDivStyle = {
@@ -11,13 +14,16 @@ const linkDivStyle = {
 }
 
 const logoStyle = {
-    display: "flex"
+    display: "flex",
+    cursor: "pointer"
 }
 
 const headerStyle = {
     display: "grid",
     gridTemplateColumns: "1fr 6fr",
-    justifyContent: "space-between"
+    justifyContent: "space-between",
+    paddingTop: "22px",
+    paddingBottom: "22px"
 }
 
 const menuToggle = () => {
@@ -32,7 +38,9 @@ const menuToggle = () => {
 const Header = () => (
   <div style={headerStyle}>
       <div className="logoicon" style={logoStyle}>
-        <img src="https://img.icons8.com/color/48/000000/github-2.png"/>
+            <a>
+                <img src="https://img.icons8.com/color/48/000000/github-2.png"/>
+            </a>
       </div>
       <div className="hamburger">
         <a onClick={() => menuToggle()}>
@@ -64,7 +72,7 @@ const Header = () => (
         <Link href="/#">
             <a style={linkStyle}>Login</a>
         </Link>
-        <button>SIGN UP FREE</button>
+        <button style={linkStyle}>SIGN UP FREE</button>
       </div>
 
       <style jsx>{`
