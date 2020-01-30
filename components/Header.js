@@ -7,24 +7,6 @@ const linkStyle = {
   cursor: "pointer"
 };
 
-const linkDivStyle = {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "flex-end"
-}
-
-
-const headerStyle = {
-    display: "flex",
-    justifyContent: "space-between",
-    paddingLeft: "20px",
-    paddingRight: "20px",
-    maxWidth: "1200px",
-    alignItems: "center",
-    height: "100px",
-    margin: "0 auto"
-}
-
 const menuToggle = () => {
     let nav = document.querySelector(".navlinks")
     if(nav.style.display == "none") {
