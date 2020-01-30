@@ -145,9 +145,63 @@ export default function Index() {
 
 
         @media only screen and (max-width: 1000px) {
-            .navlinks {
+            .borderline {
                 display: none;
             }
+
+            .body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .first {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            h1, h2 {
+                text-align: center;
+            }
+            form {
+                padding-top: 50px;
+            }
+            
+            h1 {
+                font-size: 60px;
+                line-height: 60px;
+                padding-top: 60px;
+                padding-bottom: 50px;
+            }
+
+            h2 {
+                font-size: 32px;
+                line-height: 32px;
+                max-width: 350px;
+            }
+
+            .body {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+            .yourteam {
+                padding-top: 0;
+                max-width: 300px;
+                min-width: 300px;
+                margin: 0 auto;
+            }
+
+            form {
+                display: flex;
+            }
+
+            button {
+                font-size: 14px;
+            }
+
+            .imglogo {
+                flex-direction: column;
+            }
+
           }
         `}</style>
       </div>

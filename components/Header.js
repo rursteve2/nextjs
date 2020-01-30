@@ -35,7 +35,7 @@ const menuToggle = () => {
 }
 
 const Header = () => (
-  <div style={headerStyle}>
+  <div className="headerstyle">
       <div className="logoicon">
             <a>
                 <img src="https://img.icons8.com/color/48/000000/github-2.png"/>
@@ -82,10 +82,18 @@ const Header = () => (
             font-family: 'Rubik',sans-serif;
         }
 
-        .logoicon {
-
+        .headerstyle {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 20px;
+            padding-right: 20px;
+            max-width: 1200px;
+            align-items: center;
+            height: 100px;
+            margin: 0 auto;
+            top: 0;
+            position: fixed;
         }
-
 
         .hamburger {
             display: none;
@@ -93,6 +101,10 @@ const Header = () => (
 
         img {
             cursor: pointer;
+        }
+
+        a {
+            color: rgb(15, 27, 50)
         }
 
         button {
@@ -119,9 +131,24 @@ const Header = () => (
                 display: none;
             }
             .hamburger {
-                display: flex;
-                align-items: center;
-                justify-content: flex-end;
+                display: block;
+                position: absolute;
+                right: 20px;
+            }
+
+            .headerstyle {
+                position: relative;
+            }
+
+            .headerstyle .navlinks {
+                padding: 10px 10px;
+                margin-top: 450px;
+                background-color: white;
+                width: 100%;
+                align-items: flex-end;
+                margin-right: -25px;
+                overflow: hidden;
+                line-height: 3;
             }
           }
         `}</style>
