@@ -91,8 +91,7 @@ const Header = () => (
             align-items: center;
             height: 100px;
             margin: 0 auto;
-            top: 0;
-            position: fixed;
+ 
         }
 
         .hamburger {
