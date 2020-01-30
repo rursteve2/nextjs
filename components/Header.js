@@ -13,17 +13,16 @@ const linkDivStyle = {
     justifyContent: "flex-end"
 }
 
-const logoStyle = {
-    display: "flex",
-    cursor: "pointer"
-}
 
 const headerStyle = {
-    display: "grid",
-    gridTemplateColumns: "1fr 6fr",
+    display: "flex",
     justifyContent: "space-between",
-    paddingTop: "22px",
-    paddingBottom: "22px"
+    paddingLeft: "20px",
+    paddingRight: "20px",
+    maxWidth: "1200px",
+    alignItems: "center",
+    height: "100px",
+    margin: "0 auto"
 }
 
 const menuToggle = () => {
@@ -37,7 +36,7 @@ const menuToggle = () => {
 
 const Header = () => (
   <div style={headerStyle}>
-      <div className="logoicon" style={logoStyle}>
+      <div className="logoicon">
             <a>
                 <img src="https://img.icons8.com/color/48/000000/github-2.png"/>
             </a>
@@ -72,7 +71,7 @@ const Header = () => (
         <Link href="/#">
             <a style={linkStyle}>Login</a>
         </Link>
-        <button style={linkStyle}>SIGN UP FREE</button>
+        <button>SIGN UP FREE</button>
       </div>
 
       <style jsx>{`
@@ -80,9 +79,38 @@ const Header = () => (
             display: flex;
             align-items: center;
             justify-content: flex-end;
+            font-family: 'Rubik',sans-serif;
         }
+
+        .logoicon {
+
+        }
+
+
         .hamburger {
             display: none;
+        }
+
+        img {
+            cursor: pointer;
+        }
+
+        button {
+            margin-right: 15px;
+            font-family: 'Rubik',sans-serif;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 32px;
+            background-color: rgb(65, 155, 249);
+            color: white;
+            font-size: 12px;
+            width: 130px;
+            border-width: 0px;
+            border-radius: 4px;
+            transition: background-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+
         }
 
 

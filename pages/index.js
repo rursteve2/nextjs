@@ -7,7 +7,7 @@ export default function Index() {
                 <div className="first">
                     <h1>build grow <br/> scale win</h1>
                     <div className="borderline"></div>
-                    <div>
+                    <div className="yourteam">
                         <h2>your team's <div className="animation">best practices </div><br/>in a fast flexible workspace</h2>
                         <form><input type="email" placeholder="name@company.com"></input><button type="submit">SIGN UP FREE</button></form>
                     </div>
@@ -35,6 +35,8 @@ export default function Index() {
             margin-bottom: 0;
             letter-spacing: 3px;
             text-align: right;
+            color: rgb(15, 27, 50);
+            line-height: 92px;
         }
 
         .borderline {
@@ -50,6 +52,8 @@ export default function Index() {
             margin-top: 0;
             margin-bottom: 0;
             font-size: 36px;
+            line-height: 42px;
+            color: rgb(15, 27, 50);
         }
 
         .first {
@@ -80,6 +84,63 @@ export default function Index() {
         img {
             height: auto;
             margin: 10px 10px 10px 10px;
+            filter: grayscale(100%);
+        }
+
+        img:hover {
+            filter: none;
+            transition: all .5s;
+        }
+
+
+        form {
+            display: flex;
+            width: 100%;
+            padding-top: 15px;
+        }
+
+        input {
+            border-width: 1px 1px 1px;
+            border-style: solid solid solid;
+            border-image: initial;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+            font-size: 16px;
+            min-height: 50px;
+            max-width: 450px;
+            min-width: 150px;
+            width: 100%;
+            border-color: rgba(201, 201, 201, .59) rgba(201, 201, 201, .59) rgba(201, 201, 201, .59);
+            border-right: 0px;
+            transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s;
+        }
+
+        input::placeholder {
+            padding: 5px 10px;
+            font-family: 'Rubik',sans-serif;
+        }
+
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            background-color: rgb(65, 155, 249);
+            padding-left: 15px;
+            padding-right: 15px;
+            font-size: 16px;
+            color: white;
+            border: none;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+
+        .yourteam {
+            padding-top: 15px;
         }
 
 
